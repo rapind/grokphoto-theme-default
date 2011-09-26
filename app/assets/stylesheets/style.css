@@ -1,0 +1,476 @@
+/*--------------
+Author: Hanz Ray Ronquillo
+Author URI: http://www.hanzray.com
+---------------- */
+
+html.blue{background: url(/assets/theme_default/blue/html_background.png) repeat 0 0;}
+html.fuschia{background: url(/assets/theme_default/fuschia/html_background.png) repeat 0 0;}
+html.green{background: url(/assets/theme_default/green/html_background.png) repeat 0 0;}
+html.orange{background: url(/assets/theme_default/orange/html_background.png) repeat 0 0;}
+html.orange_dark{background: url(/assets/theme_default/orange_dark/html_background.png) repeat 0 0;}
+
+/* Global CSS */
+
+body{font-size: 12px;padding: 0;}
+a{text-decoration:none;}
+h2 {
+  padding: 20px 0 0;
+}
+p {
+  overflow: hidden;
+  padding: 10px 0;
+  line-height:1.8;
+}
+ul{list-style-type:none;}
+
+/* Header */
+#header{
+  position:relative;
+  height:107px;
+  padding:30px 0 0 0;
+}
+#header #logo{
+  width:302px;
+  height:83px;
+  float:left;
+}
+#header #navigation{
+  float:right;
+  padding:15px 0 0 0;
+}
+/* ----- Blue Theme ----- */
+
+body.blue {
+  background:url(/assets/theme_default/blue/body_background.png) repeat-y top center;
+  color: #ffffff;
+}
+body.blue a {color: #004c87;}
+body.blue a:hover {color:#ffffff;}
+body.blue h1{color:#333333;font-weight: normal;}
+body.blue #header{background:url(/assets/theme_default/blue/header_background.png) repeat-x 0 0;}
+body.blue #header #navigation ul li a.active{
+  color:#6585a0;
+  background:#e3eef9;
+}
+body.blue #header #navigation ul li a:hover{
+  color:#6585a0;
+  background:#e3eef9;
+}
+body.blue #header #navigation ul.topnav li a{color:#888787;}
+body.blue #header #navigation ul.topnav li a:hover{
+  background: #e3eef9;
+  color:#6585a0;
+}
+body.blue #header #navigation ul.topnav li ul.subnav {
+  background: #e3eef9;
+  border-top:1px solid #fff;
+}
+body.blue #header #navigation ul.topnav li ul.subnav li a {
+  background: #e3eef9;
+  border-bottom:1px dotted #ccc;}
+body.blue #header #navigation ul.topnav li ul.subnav li a:hover {background: #e3eef9; }/*--Hover effect for subnav links--*/
+
+body.blue .homebox h5{color:#363636;}
+body.blue .homebox .home_title1{background:url(/assets/theme_default/blue/homebox_title1.png) no-repeat 0 0;width:310px;height:31px;text-indent:-9999px;}
+body.blue .homebox .home_title2{background:url(/assets/theme_default/blue/homebox_title2.png) no-repeat 0 0;width:310px;height:31px;text-indent:-9999px;}
+body.blue .homebox .home_title3{background:url(/assets/theme_default/blue/homebox_title3.png) no-repeat 0 0;width:310px;height:31px;text-indent:-9999px;}
+body.blue .homebox_image{background:url(/assets/theme_default/blue/homebox_image_shadow.png) no-repeat 0 bottom;}
+body.blue .homebox img{border:3px solid #ffffff;}
+body.blue .homebox p{color:#333333;}
+body.blue .homebox  .learn_more a{background:url(/assets/theme_default/blue/btn_learn.png) no-repeat 0 0;}
+
+body.blue #main_container{background:url(/assets/theme_default/blue/main_container_background.png) repeat-y 0 0;}
+body.blue #left_side h1{color:#ffffff;}
+body.blue #right_side h5{color:#ffffff;}
+
+body.blue #footer{
+  background:url(/assets/theme_default/blue/background_footer.png) repeat 0 0;
+  border-top:6px solid #6585a0;
+}
+body.blue #footer #grokphoto a{background:url(/assets/theme_default/blue/grokphoto.png) no-repeat 0 0;}
+body.blue #footer #grokphoto a:hover{background:url(/assets/theme_default/blue/grokphoto.png) no-repeat 0 -22px;}
+body.blue #footer #copyright{color:#0a0a0a;}
+body.blue #footer #copyright a{color:#739cbd;}
+
+/* ----- Fuschia Theme ----- */
+
+body.fuschia {
+  background:url(/assets/theme_default/fuschia/body_background.png) repeat-y top center;
+  color: #ffffff;
+}
+body.fuschia a {color: #DC0062;}
+body.fuschia a:hover {color:#ffffff;}
+body.fuschia h1{color:#333333;font-weight: normal;}
+body.fuschia #header{background:url(/assets/theme_default/fuschia/header_background.png) repeat-x 0 0;}
+body.fuschia #header #navigation ul li a.active{
+  color:#878787;
+  background:#dc0062;
+}
+body.fuschia #header #navigation ul li a:hover{
+  color:#6585a0;
+  background:#e3eef9;
+}
+body.fuschia #header #navigation ul.topnav li a{color:#888787;}
+body.fuschia #header #navigation ul.topnav li a:hover{
+  color:#ffffff;
+  background:#dc0062;
+}
+body.fuschia #header #navigation ul.topnav li ul.subnav {
+  background: #1e1e1e;
+  border-top:1px solid #fff;
+}
+body.fuschia #header #navigation ul.topnav li ul.subnav li a {
+  background: #1e1e1e;
+  color:888787;
+  border-bottom:1px dotted #424242;}
+body.fuschia #header #navigation ul.topnav li ul.subnav li a:hover {background: #1e1e1e; }/*--Hover effect for subnav links--*/
+
+body.fuschia .homebox h5{color:#dc0062;}
+body.fuschia .homebox .home_title1{background:url(/assets/theme_default/fuschia/homebox_title1.png) no-repeat 0 0;width:310px;height:31px;text-indent:-9999px;}
+body.fuschia .homebox .home_title2{background:url(/assets/theme_default/fuschia/homebox_title2.png) no-repeat 0 0;width:310px;height:31px;text-indent:-9999px;}
+body.fuschia .homebox .home_title3{background:url(/assets/theme_default/fuschia/homebox_title3.png) no-repeat 0 0;width:310px;height:31px;text-indent:-9999px;}
+body.fuschia .homebox_image{background:url(/assets/theme_default/fuschia/homebox_image_shadow.png) no-repeat 0 bottom;}
+body.fuschia .homebox img{border:3px solid #ffffff;}
+body.fuschia .homebox p{color:#333333;}
+body.fuschia .homebox  .learn_more a{background:url(/assets/theme_default/fuschia/btn_learn.png) no-repeat 0 0;}
+
+body.fuschia #main_container{background:url(/assets/theme_default/fuschia/main_container_background.png) repeat-y 0 0;}
+body.fuschia #left_side h1{color:#ffffff;}
+body.fuschia #right_side h5{color:#ffffff;}
+
+body.fuschia #footer{
+  background:url(/assets/theme_default/fuschia/background_footer.png) repeat 0 0;
+  border-top:6px solid #e2e2e2;
+}
+body.fuschia #footer #grokphoto a{background:url(/assets/theme_default/fuschia/grokphoto.png) no-repeat 0 0;}
+body.fuschia #footer #grokphoto a:hover{background:url(/assets/theme_default/fuschia/grokphoto.png) no-repeat 0 -22px;}
+body.fuschia #footer #copyright{color:#ffffff;}
+body.fuschia #footer #copyright a{color:#DC0062;}
+
+/* ----- green Theme ----- */
+
+body.green {
+  background:url(/assets/theme_default/green/body_background.png) repeat-y top center;
+  color: #ffffff;
+}
+body.green a {color: #446f15;}
+body.green a:hover {color:#ffffff;}
+body.green h1{color:#333333;font-weight: normal;}
+body.green #header{background:url(/assets/theme_default/green/header_background.png) repeat-x 0 0;}
+body.green #header #navigation ul li a.active{
+  color:#333333;
+  background:#587434;
+}
+body.green #header #navigation ul li a:hover{
+  color:#ffffff;
+  background:#587434;
+}
+body.green #header #navigation ul.topnav li a{color:#333333;}
+body.green #header #navigation ul.topnav li a:hover{
+  background: #587434;
+  color:#ffffff;
+}
+body.green #header #navigation ul.topnav li ul.subnav {
+  background: #444444;
+  border-top:1px solid #fff;
+}
+body.green #header #navigation ul.topnav li ul.subnav li a {
+  background: #444444;
+  color:#c9c9c9;
+  border-bottom:1px dotted #ccc;}
+body.green #header #navigation ul.topnav li ul.subnav li a:hover {background: #444444; }/*--Hover effect for subnav links--*/
+
+body.green .homebox h5{color:#587434;}
+body.green .homebox .home_title1{background:url(/assets/theme_default/green/homebox_title1.png) no-repeat 0 0;width:310px;height:31px;text-indent:-9999px;}
+body.green .homebox .home_title2{background:url(/assets/theme_default/green/homebox_title2.png) no-repeat 0 0;width:310px;height:31px;text-indent:-9999px;}
+body.green .homebox .home_title3{background:url(/assets/theme_default/green/homebox_title3.png) no-repeat 0 0;width:310px;height:31px;text-indent:-9999px;}
+body.green .homebox_image{background:url(/assets/theme_default/green/homebox_image_shadow.png) no-repeat 0 bottom;}
+body.green .homebox img{border:3px solid #ffffff;}
+body.green .homebox p{color:#333333;}
+body.green .homebox  .learn_more a{background:url(/assets/theme_default/green/btn_learn.png) no-repeat 0 0;}
+
+body.green #main_container{background:url(/assets/theme_default/green/main_container_background.png) repeat-y 0 0;}
+body.green #left_side h1{color:#ffffff;}
+body.green #right_side h5{color:#ffffff;}
+
+body.green #footer{
+  background:url(/assets/theme_default/green/background_footer.png) repeat 0 0;
+  border-top:6px solid #ffffff;
+}
+body.green #footer #grokphoto a{background:url(/assets/theme_default/green/grokphoto.png) no-repeat 0 0;}
+body.green #footer #grokphoto a:hover{background:url(/assets/theme_default/green/grokphoto.png) no-repeat 0 -22px;}
+body.green #footer #copyright{color:#ffffff;}
+body.green #footer #copyright a{color:#4c8700;}
+
+/* ----- orange Theme ----- */
+
+body.orange {
+  background:url(/assets/theme_default/orange/body_background.png) repeat-y top center;
+  color: #ffffff;
+}
+body.orange a {color: #fbf206;}
+body.orange a:hover {color:#ffffff;}
+body.orange h1{color:#333333;font-weight: normal;}
+body.orange #header{background:url(/assets/theme_default/orange/header_background.png) repeat-x 0 0;}
+body.orange #header #navigation ul li a.active{
+  color:#333333;
+  background:#ffd5a4;
+}
+body.orange #header #navigation ul li a:hover{
+  color:#ffffff;
+  background:#ffd5a4;
+}
+body.orange #header #navigation ul.topnav li a{color:#333333;}
+body.orange #header #navigation ul.topnav li a:hover{
+  background: #ffd5a4;
+  color:#003f8d;
+}
+body.orange #header #navigation ul.topnav li ul.subnav {
+  background: #ffd5a4;
+  border-top:1px solid #fff;
+}
+body.orange #header #navigation ul.topnav li ul.subnav li a {
+  background: #ffd5a4;
+  color:#003f8d;
+  border-bottom:1px dotted #ccaa83;}
+body.orange #header #navigation ul.topnav li ul.subnav li a:hover {background: #ffd5a4; }/*--Hover effect for subnav links--*/
+
+body.orange .homebox h5{color:#ffffff;}
+body.orange .homebox .home_title1{background:url(/assets/theme_default/orange/homebox_title1.png) no-repeat 0 0;width:310px;height:31px;text-indent:-9999px;}
+body.orange .homebox .home_title2{background:url(/assets/theme_default/orange/homebox_title2.png) no-repeat 0 0;width:310px;height:31px;text-indent:-9999px;}
+body.orange .homebox .home_title3{background:url(/assets/theme_default/orange/homebox_title3.png) no-repeat 0 0;width:310px;height:31px;text-indent:-9999px;}
+body.orange .homebox_image{background:url(/assets/theme_default/orange/homebox_image_shadow.png) no-repeat 0 bottom;}
+body.orange .homebox img{border:3px solid #ffffff;}
+body.orange .homebox p{color:#333333;}
+body.orange .homebox  .learn_more a{background:url(/assets/theme_default/orange/btn_learn.png) no-repeat 0 0;}
+
+body.orange #main_container{background:url(/assets/theme_default/orange/main_container_background.png) repeat-y 0 0;}
+body.orange #left_side h1{color:#ffffff;}
+body.orange #right_side h5{color:#ffffff;}
+
+body.orange #footer{
+  background:url(/assets/theme_default/orange/background_footer.png) repeat 0 0;
+  border-top:6px solid #a56007;
+}
+body.orange #footer #grokphoto a{background:url(/assets/theme_default/orange/grokphoto.png) no-repeat 0 -22px;}
+body.orange #footer #grokphoto a:hover{background:url(/assets/theme_default/orange/grokphoto.png) no-repeat 0 -22px;}
+body.orange #footer #copyright{color:#ffffff;}
+body.orange #footer #copyright a{color:#f5822b;}
+
+/* ----- orange_dark Theme ----- */
+
+body.orange_dark {
+  background:url(/assets/theme_default/orange_dark/body_background.png) repeat-y top center;
+  color: #ffffff;
+}
+body.orange_dark a {color: #fbad06;}
+body.orange_dark a:hover {color:#ffffff;}
+body.orange_dark h1{color:#333333;font-weight: normal;}
+body.orange_dark #header{background:url(/assets/theme_default/orange_dark/header_background.png) repeat-x 0 0;}
+body.orange_dark #header #navigation ul li a.active{
+  color:#333333;
+  background:#ffd5a4;
+}
+body.orange_dark #header #navigation ul li a:hover{
+  color:#ffffff;
+  background:#ffd5a4;
+}
+body.orange_dark #header #navigation ul.topnav li a{color:#333333;}
+body.orange_dark #header #navigation ul.topnav li a:hover{
+  background: #ff9920;
+  color:#ffffff;
+}
+body.orange_dark #header #navigation ul.topnav li ul.subnav {
+  background: #373737;
+  border-top:1px solid #fff;
+}
+body.orange_dark #header #navigation ul.topnav li ul.subnav li a {
+  background: #373737;
+  color:#ffffff;
+  border-bottom:1px dotted #606060;}
+body.orange_dark #header #navigation ul.topnav li ul.subnav li a:hover {background: #373737; }/*--Hover effect for subnav links--*/
+
+body.orange_dark .homebox h5{color:#ffffff;}
+body.orange_dark .homebox .home_title1{background:url(/assets/theme_default/orange_dark/homebox_title1.png) no-repeat 0 0;width:310px;height:31px;text-indent:-9999px;}
+body.orange_dark .homebox .home_title2{background:url(/assets/theme_default/orange_dark/homebox_title2.png) no-repeat 0 0;width:310px;height:31px;text-indent:-9999px;}
+body.orange_dark .homebox .home_title3{background:url(/assets/theme_default/orange_dark/homebox_title3.png) no-repeat 0 0;width:310px;height:31px;text-indent:-9999px;}
+body.orange_dark .homebox_image{background:url(/assets/theme_default/orange_dark/homebox_image_shadow.png) no-repeat 0 bottom;}
+body.orange_dark .homebox img{border:3px solid #ffffff;}
+body.orange_dark .homebox p{color:#515151;}
+body.orange_dark .homebox  .learn_more a{background:url(/assets/theme_default/orange_dark/btn_learn.png) no-repeat 0 0;}
+
+body.orange_dark #main_container{background:url(/assets/theme_default/orange_dark/main_container_background.png) repeat-y 0 0;}
+body.orange_dark #left_side h1{color:#ffffff;}
+body.orange_dark #right_side h5{color:#ffffff;}
+
+body.orange_dark #footer{
+  background:url(/assets/theme_default/orange_dark/background_footer.png) repeat 0 0;
+  border-top:6px solid #1b1b1b;
+}
+body.orange_dark #footer #grokphoto a{background:url(/assets/theme_default/orange_dark/grokphoto.png) no-repeat 0 -22px;}
+body.orange_dark #footer #grokphoto a:hover{background:url(/assets/theme_default/orange_dark/grokphoto.png) no-repeat 0 -22px;}
+body.orange_dark #footer #copyright{color:#ffffff;}
+body.orange_dark #footer #copyright a{color:#f5822b;}
+
+/* -- SLIDER -- */
+#main_slider{
+  background:url(/assets/theme_default/slider_background.png) repeat 0 0;
+  height:646px;
+}
+#main_slider .slider_area{
+  background:url(/assets/theme_default/slider.png) no-repeat 0 0;
+  width:950px;
+  height:598px;
+  margin:18px 0;
+}
+
+/* -- /SLIDER -- */
+
+/* -- HOMEBOX -- */
+.homebox{
+  float:left;
+  margin:0 0 0 10px;
+  width:310px;
+}
+.homebox h5{
+  font-size:14px;
+  padding:0 0 0 14px;
+  text-transform:uppercase;
+}
+.homebox h3{ margin:0; padding:0;}
+.homebox_image{
+  width:290px;
+  height:85px;
+  padding:0 0 14px 20px ;
+}
+.homebox p{ padding:0 20px 0 20px;font-size:12px;}
+.homebox  .learn_more a{
+  float:right;
+  display:block;
+  width:104px;
+  height:43px;
+  text-indent:-9999px;
+}
+.homebox  .learn_more a:hover{}
+/* -- HOMEBOX -- */
+
+/* -- MAIN_CONTAINER -- */
+#main_container{
+  position:relative;
+  margin:50px 0 20px 0;
+  padding:0 0 0 0;
+
+}
+#main_container .main_container_header h1{
+  padding:15px 22px;
+  margin:0;
+}
+/* -- /MAIN_CONTAINER -- */
+
+/* -- LEFT_SIDE -- */
+#left_side{
+  width:615px;
+  padding:35px 25px 0 0;
+  float:left;
+}
+#left_side h1{
+  text-transform:uppercase;
+  font-weight:bold;
+}
+/* -- /LEFT_SIDE -- */
+
+/* -- RIGHT_SIDE -- */
+#right_side{
+  width:290px;
+  background:url(/assets/theme_default/border.png) repeat-y left 0;
+  padding:35px 0 0 20px;
+  float:left;
+}
+#right_side h5{
+  text-transform:uppercase;
+  font-weight:bold;
+  margin-top:5px;
+}
+
+
+/* -- /RIGHT_SIDE -- */
+
+
+/* -- FOOTER -- */
+#footer{
+  margin:0 auto;
+  height:55px;
+  padding:35px 0;
+}
+#footer .footer_logo{
+  width:360px;
+  float:left;
+}
+#footer #copyright{
+  float:right;
+  width:590px;
+  height:23px;
+  font-size:9px;
+  text-transform:uppercase;
+  text-align:right;
+}
+#footer #grokphoto{float:right;height:22px;width:590px;}
+#footer #grokphoto a{
+  width:89px;
+  height:22px;
+  text-indent:-9999px;
+  display:block;
+  float:right;
+}
+/* -- /FOOTER -- */
+
+/* -- MENU -- */
+
+#header #navigation ul.topnav{
+  list-style-type:none;
+  padding:0;
+  margin:20px 0 0;
+}
+#header #navigation ul.topnav li {
+  float: left;
+  margin: 0;
+  padding: 0 0 0 0;
+  position: relative; /*--Declare X and Y axis base--*/
+}
+#header #navigation ul.topnav li a{
+  font-family:verdana;
+  font-size:13px;
+  padding:14px 20px;
+  margin:0;
+  font-size:13px;
+  text-transform:uppercase;
+  float:left;
+}
+
+#header #navigation ul.topnav li span.subhover {background-position: center bottom; cursor: pointer;} /*--Hover effect for trigger--*/
+#header #navigation ul.topnav li ul.subnav {
+  list-style: none;
+  position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
+  left: 0;
+  top: 48px;
+  margin: 0;
+  padding: 0;
+  display: none;
+  float: left;
+  width: 100%;
+  z-index:100;
+}
+#header #navigation ul.topnav li ul.subnav li{
+  margin: 0; padding: 0;
+  clear: both;
+  width: 100%;
+
+}
+#header #navigation ul.topnav li ul.subnav li a {
+  float: left;
+  text-transform:none;
+  width:180px;
+  padding:5px 10px 5px 20px;
+  margin-top:0;
+
+}
