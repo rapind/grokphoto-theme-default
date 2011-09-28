@@ -1,1 +1,12 @@
 - content_for :title, 'Home'
+.container_24
+  .grid_24
+    #slider-wrapper
+      #slider.nivoSlider
+        - @portfolios.each do |portfolio|
+          = image_tag(portfolio.cover.url, :alt => portfolio.title, :title => portfolio.title)
+      #htmlcaption.nivo-html-caption This is an example of a caption.
+      :javascript
+        $(window).load(function() {
+          $('#slider').nivoSlider();
+        });
