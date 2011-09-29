@@ -433,7 +433,7 @@ body.orange_dark #footer #copyright a{color:#f5822b;}
 #header #navigation ul.topnav{
   list-style-type:none;
   padding:0;
-  margin:20px 0 0;
+  margin:0;
 }
 #header #navigation ul.topnav li {
   float: left;
@@ -443,10 +443,9 @@ body.orange_dark #footer #copyright a{color:#f5822b;}
 }
 #header #navigation ul.topnav li a{
   font-family:verdana;
-  font-size:13px;
-  padding:14px 20px;
+  padding:10px 20px;
   margin:0;
-  font-size:13px;
+  font-size:20px;
   text-transform:uppercase;
   float:left;
 }
