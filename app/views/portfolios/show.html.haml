@@ -7,7 +7,7 @@
       #slider-wrapper
         #slider.nivoSlider
           - @portfolio.portfolio_photos.each do |portfolio_photo|
-            = image_tag(portfolio_photo.photo.url, :size => '893x491', :alt => portfolio_photo.title, :title => portfolio_photo.title)
+            = image_tag(portfolio_photo.photo.url, :size => '893x491', :alt => portfolio_photo.title)
         #htmlcaption.nivo-html-caption
         :javascript
           $(window).load(function() {
