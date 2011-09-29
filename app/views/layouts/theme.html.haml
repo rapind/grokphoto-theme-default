@@ -1,7 +1,7 @@
 !!!
 %html{ 'xml:lang' => 'en', :lang => 'en', :xmlns => 'http://www.w3.org/1999/xhtml', :class => 'blue' }
   %head
-    %title= @photographer.name
+    %title= "#{yield(:meta_title).presence || 'Home'} | #{@photographer.name}"
     = stylesheet_link_tag 'theme'
     = javascript_include_tag 'theme'
     = csrf_meta_tags
@@ -23,6 +23,8 @@
                 %li= link_to(page.title, page_path(page))
               %li= link_to('Blog', @photographer.blog_url)
     #main_slider
+      - if content_for?(:page_title)
+        %h1= yield(:page_title)
       = yield
       .clear
     #footer

@@ -92,6 +92,10 @@ body.blue #footer #grokphoto a:hover{background:url(/assets/theme_default/blue/g
 body.blue #footer #copyright{color:#0a0a0a;}
 body.blue #footer #copyright a{color:#739cbd;}
 
+body.blue #page_title {
+  color: #323d44;
+}
+
 /* ----- Fuschia Theme ----- */
 
 body.fuschia {
@@ -315,7 +319,7 @@ body.orange_dark #footer #copyright a{color:#f5822b;}
 /* -- SLIDER -- */
 #main_slider{
   background:url(/assets/theme_default/slider_background.png) repeat 0 0;
-  height:646px;
+  height:660px;
 }
 #main_slider .slider_area{
   background:url(/assets/theme_default/slider.png) no-repeat 0 0;
@@ -474,3 +478,13 @@ body.orange_dark #footer #copyright a{color:#f5822b;}
   margin-top:0;
 
 }
+
+/* -- /MENU -- */
+
+/* -- INTERIOR -- */
+#page_title {
+  position: absolute;
+  top: 605px;
+  left: 20px;
+}
+/* -- /INTERIOR -- */
