@@ -5,7 +5,7 @@
       #slider-wrapper
         #slider.nivoSlider
           - @portfolios.each do |portfolio|
-            = image_tag(portfolio.cover.url, :alt => portfolio.title, :title => portfolio.title)
+            = image_tag(portfolio.cover.url, :size => '893x491', :alt => portfolio.title, :title => portfolio.title)
         #htmlcaption.nivo-html-caption This is an example of a caption.
         :javascript
           $(window).load(function() {
