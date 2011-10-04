@@ -1,0 +1,45 @@
+@import '../sass-plugins/reset'
+@import '../sass-plugins/typography'
+@import '../sass-plugins/grid'
+@import 'nivo-slider'
+@import 'blue'
+
+h1
+  margin-top: 0
+
+#container
+  +row
+
+#header
+  +column(12, true)
+  margin: 0 0 20px 0
+  border-bottom: 1px solid #888
+  a:
+    text-decoration: none
+
+  #logo
+    +column(6, false)
+
+  ul#top_nav
+    +column(6, true)
+    padding: 0
+    margin: 0
+    list-style-type: none
+    li
+      position: relative
+      float: left
+      padding: 10px
+    a
+      text-decoration: none
+
+#main
+  +column(12, true)
+
+  #content
+    +column(9, true)
+
+#footer
+  +column(12, true)
+  margin: 20px 0 0 0
+  padding: 10px 0
+  border-top: 1px solid #888

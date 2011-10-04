@@ -74,10 +74,7 @@ body.blue .homebox h5{color:#363636;}
 body.blue .homebox .home_title1{background:url(/assets/theme_default/blue/homebox_title1.png) no-repeat 0 0;width:310px;height:31px;text-indent:-9999px;}
 body.blue .homebox .home_title2{background:url(/assets/theme_default/blue/homebox_title2.png) no-repeat 0 0;width:310px;height:31px;text-indent:-9999px;}
 body.blue .homebox .home_title3{background:url(/assets/theme_default/blue/homebox_title3.png) no-repeat 0 0;width:310px;height:31px;text-indent:-9999px;}
-body.blue .homebox_image{background:url(/assets/theme_default/blue/homebox_image_shadow.png) no-repeat 0 bottom;}
-body.blue .homebox img{border:3px solid #ffffff;}
-body.blue .homebox p{color:#333333;}
-body.blue .homebox  .learn_more a{background:url(/assets/theme_default/blue/btn_learn.png) no-repeat 0 0;}
+body.blue .homebox p{color:#eee;}
 
 body.blue #main_container{background:url(/assets/theme_default/blue/main_container_background.png) repeat-y 0 0;}
 body.blue #left_side h1{color:#ffffff;}
@@ -332,30 +329,15 @@ body.orange_dark #footer #copyright a{color:#f5822b;}
 
 /* -- HOMEBOX -- */
 .homebox{
-  float:left;
-  margin:0 0 0 10px;
-  width:310px;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 150px;
 }
-.homebox h5{
-  font-size:14px;
-  padding:0 0 0 14px;
-  text-transform:uppercase;
+.homebox p {
+  font-size: 1.3em;
 }
-.homebox h3{ margin:0; padding:0;}
-.homebox_image{
-  width:290px;
-  height:85px;
-  padding:0 0 14px 20px ;
-}
-.homebox p{ padding:0 20px 0 20px;font-size:12px;}
-.homebox  .learn_more a{
-  float:right;
-  display:block;
-  width:104px;
-  height:43px;
-  text-indent:-9999px;
-}
-.homebox  .learn_more a:hover{}
 /* -- HOMEBOX -- */
 
 /* -- MAIN_CONTAINER -- */
@@ -370,35 +352,6 @@ body.orange_dark #footer #copyright a{color:#f5822b;}
   margin:0;
 }
 /* -- /MAIN_CONTAINER -- */
-
-/* -- LEFT_SIDE -- */
-#left_side{
-  width:615px;
-  padding:35px 25px 0 0;
-  float:left;
-}
-#left_side h1{
-  text-transform:uppercase;
-  font-weight:bold;
-}
-/* -- /LEFT_SIDE -- */
-
-/* -- RIGHT_SIDE -- */
-#right_side{
-  width:290px;
-  background:url(/assets/theme_default/border.png) repeat-y left 0;
-  padding:35px 0 0 20px;
-  float:left;
-}
-#right_side h5{
-  text-transform:uppercase;
-  font-weight:bold;
-  margin-top:5px;
-}
-
-
-/* -- /RIGHT_SIDE -- */
-
 
 /* -- FOOTER -- */
 #footer{
