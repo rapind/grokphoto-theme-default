@@ -1,15 +1,14 @@
+- content_for :body_class, 'home'
 - content_for :meta_title, 'Home'
-#main_slider
-  .container_24
-    .grid_24
-      #slider-wrapper
-        #slider.nivoSlider
-          - @portfolios.each do |portfolio|
-            = image_tag(portfolio.cover.url, :size => '893x491', :alt => portfolio.title)
-        #htmlcaption.nivo-html-caption This is an example of a caption.
-        :javascript
-          $(window).load(function() {
-            $('#slider').nivoSlider({
-              pauseTime: 5000
-            });
-          });
+- content_for :summary, @photographer.description
+#slider-wrapper
+  #slider.nivoSlider
+    - @portfolios.each do |portfolio|
+      = image_tag(portfolio.cover.url, :size => '893x491', :alt => portfolio.title)
+  #htmlcaption.nivo-html-caption This is an example of a caption.
+  :javascript
+    $(window).load(function() {
+      $('#slider').nivoSlider({
+        pauseTime: 5000
+      });
+    });

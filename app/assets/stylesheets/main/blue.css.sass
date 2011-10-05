@@ -1,3 +1,51 @@
 body.blue
-  background: url(/assets/theme_default/blue/html_background.png) repeat 0 0
+  $color_bg: #3a4958
+  $color_bg_top_bar: #6585a0 
+  $color_bg_header: #fff
+  $color_bg_main_top: #94a9bd
+  $color_bg_main_bottom: #778ea9
+  $color_font_navigation: #888787
 
+  background: $color_bg
+  
+  #top_bar
+    background: $color_bg_top_bar
+
+  #header
+    background: $color_bg_header
+    border-bottom: 1px solid darken($color_bg_main_top, 20%)
+
+    #top_nav
+      li
+        border-right: 1px solid lighten($color_font_navigation, 40%)
+      li.last
+        border-right: none
+      li:hover, li.active
+        background: lighten($color_font_navigation, 42%)
+        a
+          color: $color_bg_top_bar 
+      a
+        color: $color_font_navigation
+      a:hover, a.active
+        color: $color_bg_top_bar
+  
+  #main_top
+    background: $color_bg_main_top
+    border-top: 1px solid lighten($color_bg_main_top, 20%)
+  
+  #main_bottom
+    background: $color_bg_main_bottom
+
+  #footer
+    background: $color_bg
+  
+    #grokphoto_credit
+      a
+        background: url(theme_default/blue/grokphoto_credit.png) no-repeat 0 0
+      a:hover
+        background: url(theme_default/blue/grokphoto_credit.png) no-repeat 0 -22px
+
+    #copyright
+      color: #0a0a0a
+      a
+        color: #739cbd

@@ -6,31 +6,35 @@
     = javascript_include_tag 'theme'
     = csrf_meta_tags
   %body{ :class => "blue #{yield(:body_class).presence}" }
-    #container
-      #header
+    #top_bar.wrapper
+    #header.wrapper
+      .container
         #logo
           %a{ :href => root_path, :title => @photographer.name }
-            = image_tag('theme_default/blue/logo.png', :alt => @photographer.name)
+            = image_tag(@photographer.logo.url, :alt => @photographer.name)
         %ul#top_nav
-          - @portfolios.each do |portfolio|
-            %li= link_to(portfolio.title, portfolio_path(portfolio))
-          - @pages.each do |page|
-            %li= link_to(page.title, page_path(page))
           - unless @photographer.blog_url.blank?
-            %li= link_to('Blog', @photographer.blog_url)
-      #main
+            %li.last= link_to('Blog', @photographer.blog_url)
+          - @pages.reverse_each do |page|
+            %li{ :class => "#{'active' if params[:id] == page.to_param}" }= link_to(page.title, page_path(page), :class => "#{'active' if params[:id] == page.to_param}")
+          - @portfolios.reverse_each do |portfolio|
+            %li{ :class => "#{'active' if params[:id] == portfolio.to_param}" }= link_to(portfolio.title, portfolio_path(portfolio), :class => "#{'active' if params[:id] == portfolio.to_param}")
+    #main_top.wrapper
+      .container
         #content
           - if alert
             .alert-message.error= alert
           - elsif notice
             .alert-message.info= notice
           = yield
-      #footer
-        .footer_logo
-          %a{ :href => root_path }
-            = image_tag('theme_default/blue/footer_logo.png', :alt => @photographer.name)
+    - if content_for?(:summary)
+      #main_bottom.wrapper
+        .container
+          = yield(:summary)
+    #footer.wrapper
+      .container
         #copyright
-          Copyright &copy; 2011
+          Copyright &copy; #{Date.today.year}
           %a{ :href => root_path }= @photographer.name
           | All rights Reserved
-        #grokphoto= link_to('powered by: GrokPhoto', 'http://grokphoto.org', :target => '_blank')
+        #grokphoto_credit= link_to('Powered by: GrokPhoto', 'http://grokphoto.org', :target => '_blank')

@@ -1,15 +1,11 @@
+- content_for :body_class, 'portfolios'
 - content_for :meta_title, "#{@portfolio.title} Photos"
-#main_slider
-  .container_24
-    .grid_24
-      %h1#page_title= "#{@portfolio.title} Photos"
-    .grid_24
-      #slider-wrapper
-        #slider.nivoSlider
-          - @portfolio.portfolio_photos.each do |portfolio_photo|
-            = image_tag(portfolio_photo.photo.url, :size => '893x491', :alt => portfolio_photo.title)
-        #htmlcaption.nivo-html-caption
-        :javascript
-          $(window).load(function() {
-            $('#slider').nivoSlider();
-          });
+- content_for :summary, @portfolio.description
+#slider-wrapper
+  #slider.nivoSlider
+    - @portfolio.portfolio_photos.each do |portfolio_photo|
+      = image_tag(portfolio_photo.photo.url, :size => '893x491', :alt => portfolio_photo.title)
+  :javascript
+    $(window).load(function() {
+      $('#slider').nivoSlider();
+    });
